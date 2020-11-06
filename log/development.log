@@ -35,3 +35,316 @@ Processing by TasksController#index as HTML
 Completed 200 OK in 3262ms (Views: 3253.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 10.0.2.2 at 2020-11-06 06:46:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  Rendered tasks/index.html.slim within layouts/application (7.8ms)
+Completed 200 OK in 480ms (Views: 471.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for 10.0.2.2 at 2020-11-06 06:47:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/new.html.slim within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 1.4ms)
+
+
+  
+SyntaxError (/home/vagrant/work/reminder/app/views/tasks/new.html.slim:12: syntax error, unexpected tINTEGER, expecting keyword_do or '{' or '('
+....text_area :description, rows 5, class: 'form-control', id: ...
+...                              ^
+/home/vagrant/work/reminder/app/views/tasks/new.html.slim:12: syntax error, unexpected ',', expecting ')'
+... rows 5, class: 'form-control', id: 'task_description'))).to...
+...                              ^):
+  
+app/views/tasks/new.html.slim:12: syntax error, unexpected tINTEGER, expecting keyword_do or '{' or '('
+app/views/tasks/new.html.slim:12: syntax error, unexpected ',', expecting ')'
+Started GET "/tasks/new" for 10.0.2.2 at 2020-11-06 06:47:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/new.html.slim within layouts/application (64.4ms)
+Completed 200 OK in 126ms (Views: 121.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for 10.0.2.2 at 2020-11-06 06:51:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/new.html.slim within layouts/application (3.6ms)
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-11-06 06:52:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  Rendered tasks/index.html.slim within layouts/application (2.3ms)
+Completed 200 OK in 34ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-11-06 07:23:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/home/vagrant/work/reminder/app/controllers/tasks_controller.rb:25: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/tasks_controller.rb:25: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for 10.0.2.2 at 2020-11-06 07:25:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  Rendered tasks/index.html.slim within layouts/application (6.8ms)
+Completed 200 OK in 375ms (Views: 371.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for 10.0.2.2 at 2020-11-06 07:25:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/new.html.slim within layouts/application (14.5ms)
+Completed 200 OK in 71ms (Views: 57.3ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/tasks" for 10.0.2.2 at 2020-11-06 07:25:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ujuoM7NrXkKUH8MnjABVFXXPImSOjkFDw77MFYj1lhyJRwAZ+RuiKbqC504nfCEnM0rqfDe37yPek/zPvSHx1g==", "task"=>{"name"=>"aaa", "description"=>"iiii"}, "commit"=>"登録する"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tasks_controller.rb:14
+  [1m[36mTask Create (1.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "aaa"], ["description", "iiii"], ["created_at", "2020-11-06 07:25:28.620998"], ["updated_at", "2020-11-06 07:25:28.620998"]]
+  ↳ app/controllers/tasks_controller.rb:14
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tasks_controller.rb:14
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 8ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/tasks" for 10.0.2.2 at 2020-11-06 07:25:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  Rendered tasks/index.html.slim within layouts/application (2.7ms)
+Completed 200 OK in 39ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 10.0.2.2 at 2020-11-06 07:26:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  Rendered tasks/index.html.slim within layouts/application (2.6ms)
+Completed 200 OK in 57ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for 10.0.2.2 at 2020-11-06 07:26:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/new.html.slim within layouts/application (33.1ms)
+Completed 200 OK in 122ms (Views: 102.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for 10.0.2.2 at 2020-11-06 07:26:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rWfobeF24l7XwYiUKwlFwawyb5kRWFKtaImbIgmewjCeG0BHqwYeNflcrP2AdTHz6rengahh/M11pKv4PEql+g==", "task"=>{"name"=>"bbbbb", "description"=>"aaa"}, "commit"=>"登録する"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tasks_controller.rb:14
+  [1m[36mTask Create (2.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "bbbbb"], ["description", "aaa"], ["created_at", "2020-11-06 07:26:48.380770"], ["updated_at", "2020-11-06 07:26:48.380770"]]
+  ↳ app/controllers/tasks_controller.rb:14
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tasks_controller.rb:14
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 10ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/tasks" for 10.0.2.2 at 2020-11-06 07:26:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  Rendered tasks/index.html.slim within layouts/application (4.2ms)
+Completed 200 OK in 51ms (Views: 48.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for 10.0.2.2 at 2020-11-06 07:27:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/new.html.slim within layouts/application (20.1ms)
+Completed 200 OK in 359ms (Views: 344.1ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/tasks" for 10.0.2.2 at 2020-11-06 07:27:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fslaRwy3fysERHR87NM5FwxalEz/xf09k62mCia/2YRNtfJtRseDQCrZUBVHr00lSt9cVEb8U12OgJbQE2u+Tg==", "task"=>{"name"=>"", "description"=>""}, "commit"=>"登録する"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tasks_controller.rb:14
+  [1m[36mTask Create (1.5ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", ""], ["description", ""], ["created_at", "2020-11-06 07:27:01.939486"], ["updated_at", "2020-11-06 07:27:01.939486"]]
+  ↳ app/controllers/tasks_controller.rb:14
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tasks_controller.rb:14
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 9ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/tasks" for 10.0.2.2 at 2020-11-06 07:27:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  Rendered tasks/index.html.slim within layouts/application (1.8ms)
+Completed 200 OK in 35ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for 10.0.2.2 at 2020-11-06 07:27:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/new.html.slim within layouts/application (4.6ms)
+Completed 200 OK in 39ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for 10.0.2.2 at 2020-11-06 07:27:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zwYPYzqB85TTVIXg7Mu78I+UTEag3zsKZ8/iALqheWj8eqdJcPEP//3JoYlHt8/CyRGEXhnmlWp64tLaj3Ueog==", "task"=>{"name"=>"cccc", "description"=>"aaaa"}, "commit"=>"登録する"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tasks_controller.rb:14
+  [1m[36mTask Create (1.7ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "cccc"], ["description", "aaaa"], ["created_at", "2020-11-06 07:27:09.656644"], ["updated_at", "2020-11-06 07:27:09.656644"]]
+  ↳ app/controllers/tasks_controller.rb:14
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tasks_controller.rb:14
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 9ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/tasks" for 10.0.2.2 at 2020-11-06 07:27:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  Rendered tasks/index.html.slim within layouts/application (2.4ms)
+Completed 200 OK in 51ms (Views: 48.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 10.0.2.2 at 2020-11-06 07:31:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#index as HTML
+Completed 500 Internal Server Error in 135ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `all' for #<TasksController:0x00000000054d7f38>):
+  
+app/controllers/tasks_controller.rb:3:in `index'
+Started GET "/tasks" for 10.0.2.2 at 2020-11-06 07:32:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+Completed 500 Internal Server Error in 153ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `all' for #<TasksController:0x0000000005226e88>):
+  
+app/controllers/tasks_controller.rb:3:in `index'
+Started GET "/tasks" for 10.0.2.2 at 2020-11-06 07:32:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  Rendered tasks/index.html.slim within layouts/application (16.5ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `earch' for nil:NilClass):
+     9:       th= Task.human_attribute_name(:name)
+    10:       th= Task.human_attribute_name(:created_at)
+    11:   tbody
+    12:     - @tasks.earch do |task|
+    13:       tr
+    14:         td= task.name
+    15:         td= task.created_at
+  
+app/views/tasks/index.html.slim:12:in `_app_views_tasks_index_html_slim__1871672352332226471_33350160'
+Started GET "/tasks" for 10.0.2.2 at 2020-11-06 07:33:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  Rendered tasks/index.html.slim within layouts/application (13.2ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `earch' for nil:NilClass):
+     9:       th= Task.human_attribute_name(:name)
+    10:       th= Task.human_attribute_name(:created_at)
+    11:   tbody
+    12:     - @tasks.earch do |task|
+    13:       tr
+    14:         td= task.name
+    15:         td= task.created_at
+  
+app/views/tasks/index.html.slim:12:in `_app_views_tasks_index_html_slim__1871672352332226471_14508920'
+Started GET "/tasks" for 10.0.2.2 at 2020-11-06 07:33:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  Rendered tasks/index.html.slim within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `earch' for nil:NilClass):
+     9:       th= Task.human_attribute_name(:name)
+    10:       th= Task.human_attribute_name(:created_at)
+    11:   tbody
+    12:     - @tasks.earch do |task|
+    13:       tr
+    14:         td= task.name
+    15:         td= task.created_at
+  
+app/views/tasks/index.html.slim:12:in `_app_views_tasks_index_html_slim__1871672352332226471_32865740'
+Started GET "/tasks" for 10.0.2.2 at 2020-11-06 07:33:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  Rendered tasks/index.html.slim within layouts/application (24.9ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 2.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `earch' for #<Task::ActiveRecord_Relation:0x00000000045945f8>
+Did you mean?  each):
+     9:       th= Task.human_attribute_name(:name)
+    10:       th= Task.human_attribute_name(:created_at)
+    11:   tbody
+    12:     - @tasks.earch do |task|
+    13:       tr
+    14:         td= task.name
+    15:         td= task.created_at
+  
+app/views/tasks/index.html.slim:12:in `_app_views_tasks_index_html_slim__4012313258392080154_36475340'
+Started GET "/tasks" for 10.0.2.2 at 2020-11-06 07:33:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.slim:12
+  Rendered tasks/index.html.slim within layouts/application (4.9ms)
+Completed 200 OK in 379ms (Views: 375.5ms | ActiveRecord: 0.4ms)
+
+
