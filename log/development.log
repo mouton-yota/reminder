@@ -4218,3 +4218,29 @@ Processing by TasksController#show as HTML
 Completed 200 OK in 69ms (Views: 60.2ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/" for 10.0.2.2 at 2020-11-26 11:08:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering tasks/index.html.slim within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = ? ORDER BY "tasks"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/views/tasks/index.html.slim:13
+  Rendered tasks/index.html.slim within layouts/application (25.8ms)
+Completed 200 OK in 479ms (Views: 440.1ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/admin/users" for 10.0.2.2 at 2020-11-26 11:08:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering admin/users/index.html.slim within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/admin/users/index.html.slim:16
+  Rendered admin/users/index.html.slim within layouts/application (11.4ms)
+Completed 200 OK in 54ms (Views: 46.7ms | ActiveRecord: 1.1ms)
+
+
